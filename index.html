@@ -16,10 +16,23 @@
         background-color: rgb(213, 228, 214);
       }
     </style>
+
+    <link href="./assets/css/app.css" rel="stylesheet" />
+    <script type="text/javascript" src="./assets/js/app.js"></script>
   
   </head>
   <body>
     <h1 id="hello">Hello AMPHTML World!</h1>
-    <amp-img src="https://source.unsplash.com/Ji_G7Bu1MoM/600x400" height="400" layout="fixed-height"></amp-img>
+    <amp-img src="https://source.unsplash.com/Ji_G7Bu1MoM/600x400" height="100" layout="fixed-height"></amp-img>
+    <amp-base-carousel width="600" height="400" layout="responsive">
+      <amp-img src="https://source.unsplash.com/Ji_G7Bu1MoM/600x400" width="600" height="400" layout="responsive"></amp-img>
+      <amp-img src="https://source.unsplash.com/4yCXNMLP9g8/600x400" width="600" height="400" layout="responsive"></amp-img>
+    </amp-base-carousel>
+
+    <button on="tap:hello.toggleVisibility">
+        Goodbye AMPHTML World!
+    </button>
+  
+    
   </body>
 </html>
